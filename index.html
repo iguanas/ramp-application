@@ -9,18 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500;600;700&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-primary: #0a0a0b;
-            --bg-secondary: #111113;
-            --bg-tertiary: #1a1a1d;
-            --text-primary: #fafafa;
-            --text-secondary: #a1a1a6;
-            --text-muted: #6b6b70;
-            --accent: #f5c518;
-            --accent-dim: #b8940f;
-            --accent-glow: rgba(245, 197, 24, 0.15);
-            --success: #22c55e;
-            --border: #2a2a2e;
-            --border-subtle: #1f1f22;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f7f7f8;
+            --bg-tertiary: #eeeef0;
+            --text-primary: #1a1a1a;
+            --text-secondary: #555555;
+            --text-muted: #888888;
+            --accent: #1a3731;
+            --accent-dim: #0f1f1c;
+            --accent-light: #2d5c4f;
+            --accent-glow: rgba(26, 55, 49, 0.08);
+            --success: #1a3731;
+            --border: #e0e0e0;
+            --border-subtle: #f0f0f0;
         }
 
         * {
@@ -50,7 +51,7 @@
             width: 100%;
             height: 100%;
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-            opacity: 0.03;
+            opacity: 0.02;
             pointer-events: none;
             z-index: 1000;
         }
@@ -200,7 +201,7 @@
 
         .btn-primary {
             background: var(--accent);
-            color: var(--bg-primary);
+            color: #ffffff;
         }
 
         .btn-primary:hover {
@@ -398,7 +399,7 @@
             top: 8px;
             width: 11px;
             height: 11px;
-            background: var(--bg-primary);
+            background: #ffffff;
             border: 2px solid var(--accent);
             border-radius: 50%;
         }
@@ -467,12 +468,12 @@
 
         .proof-chip:hover {
             background: var(--accent);
-            color: var(--bg-primary);
+            color: #ffffff;
         }
 
         /* Video Section */
         .video-section {
-            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            background: linear-gradient(135deg, #f7f7f8 0%, #ffffff 100%);
             position: relative;
             overflow: hidden;
         }
@@ -521,7 +522,7 @@
             font-family: 'JetBrains Mono', monospace;
             font-size: 10px;
             color: var(--accent);
-            background: var(--bg-secondary);
+            background: #ffffff;
             padding: 4px 8px;
             letter-spacing: 0.1em;
         }
@@ -532,13 +533,13 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-primary) 100%);
+            background: linear-gradient(135deg, #eeeef0 0%, #f7f7f8 100%);
             cursor: pointer;
             transition: all 0.3s ease;
         }
 
         .video-placeholder:hover {
-            background: var(--bg-tertiary);
+            background: #e5e5e7;
         }
 
         .play-btn {
@@ -567,7 +568,7 @@
         }
 
         .video-placeholder:hover .play-btn svg {
-            fill: var(--bg-primary);
+            fill: #ffffff;
         }
 
         .video-placeholder span {
@@ -589,8 +590,8 @@
         }
 
         .ai-terminal {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
+            background: #1a1a1d;
+            border: 1px solid #2a2a2e;
             font-family: 'JetBrains Mono', monospace;
             font-size: 13px;
             overflow: hidden;
@@ -601,8 +602,8 @@
             align-items: center;
             gap: 8px;
             padding: 12px 16px;
-            background: var(--bg-tertiary);
-            border-bottom: 1px solid var(--border-subtle);
+            background: #111113;
+            border-bottom: 1px solid #2a2a2e;
         }
 
         .terminal-dot {
@@ -617,13 +618,14 @@
 
         .terminal-title {
             margin-left: 8px;
-            color: var(--text-muted);
+            color: #888888;
             font-size: 12px;
         }
 
         .terminal-body {
             padding: 24px;
             line-height: 1.8;
+            color: #fafafa;
         }
 
         .terminal-line {
@@ -631,15 +633,15 @@
         }
 
         .terminal-prompt {
-            color: var(--accent);
+            color: #22c55e;
         }
 
         .terminal-comment {
-            color: var(--text-muted);
+            color: #6b6b70;
         }
 
         .terminal-output {
-            color: var(--success);
+            color: #22c55e;
         }
 
         .ai-sidebar h4 {
